@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1533C41CF6D53600205818 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E1533C21CF6D53600205818 /* vector.cpp */; };
 		2E9C3DCC1C18063D00F40219 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3DCB1C18063D00F40219 /* main.cpp */; };
+		2E9C3DD31C18077700F40219 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9C3DD21C18077700F40219 /* AGL.framework */; };
+		2E9C3DD61C18078B00F40219 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9C3DD41C18078B00F40219 /* GLUT.framework */; };
+		2E9C3DD71C18078B00F40219 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9C3DD51C18078B00F40219 /* OpenGL.framework */; };
+		2EB320531C3D13F400AE236B /* trajectory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EB320521C3D13F400AE236B /* trajectory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E1533C11CF5B7A000205818 /* texturepath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texturepath.h; sourceTree = "<group>"; };
+		2E1533C21CF6D53600205818 /* vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector.cpp; sourceTree = "<group>"; };
+		2E1533C31CF6D53600205818 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
 		2E9C3DC81C18063D00F40219 /* hello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hello; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E9C3DCB1C18063D00F40219 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2E9C3DCB1C18063D00F40219 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2E9C3DD21C18077700F40219 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = System/Library/Frameworks/AGL.framework; sourceTree = SDKROOT; };
+		2E9C3DD41C18078B00F40219 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2E9C3DD51C18078B00F40219 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2EA93A501CBCA46900FF7905 /* terrainData.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terrainData.dat; sourceTree = SOURCE_ROOT; };
+		2EB320511C3D111100AE236B /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		2EB320521C3D13F400AE236B /* trajectory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trajectory.cpp; sourceTree = "<group>"; };
+		2EB320541C3D15E800AE236B /* trajectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trajectory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9C3DD61C18078B00F40219 /* GLUT.framework in Frameworks */,
+				2E9C3DD71C18078B00F40219 /* OpenGL.framework in Frameworks */,
+				2E9C3DD31C18077700F40219 /* AGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +59,9 @@
 		2E9C3DBF1C18063D00F40219 = {
 			isa = PBXGroup;
 			children = (
+				2E9C3DD41C18078B00F40219 /* GLUT.framework */,
+				2E9C3DD51C18078B00F40219 /* OpenGL.framework */,
+				2E9C3DD21C18077700F40219 /* AGL.framework */,
 				2E9C3DCA1C18063D00F40219 /* hello */,
 				2E9C3DC91C18063D00F40219 /* Products */,
 			);
@@ -57,7 +78,14 @@
 		2E9C3DCA1C18063D00F40219 /* hello */ = {
 			isa = PBXGroup;
 			children = (
+				2E1533C11CF5B7A000205818 /* texturepath.h */,
+				2EA93A501CBCA46900FF7905 /* terrainData.dat */,
 				2E9C3DCB1C18063D00F40219 /* main.cpp */,
+				2EB320511C3D111100AE236B /* main.h */,
+				2EB320521C3D13F400AE236B /* trajectory.cpp */,
+				2EB320541C3D15E800AE236B /* trajectory.h */,
+				2E1533C21CF6D53600205818 /* vector.cpp */,
+				2E1533C31CF6D53600205818 /* vector.h */,
 			);
 			path = hello;
 			sourceTree = "<group>";
@@ -101,6 +129,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 2E9C3DBF1C18063D00F40219;
@@ -118,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB320531C3D13F400AE236B /* trajectory.cpp in Sources */,
 				2E9C3DCC1C18063D00F40219 /* main.cpp in Sources */,
+				2E1533C41CF6D53600205818 /* vector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +233,19 @@
 		2E9C3DD01C18063D00F40219 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/Azhar/ode-0.13/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/Azhar/ode-0.14/ode/src/.libs",
+					"/Users/Azhar/ode-0.14/drawstuff/src/.libs",
+				);
+				OTHER_LDFLAGS = (
+					"-lode",
+					"-ldrawstuff",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +253,24 @@
 		2E9C3DD11C18063D00F40219 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/Azhar/ode-0.13/include",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/Azhar/ode-0.13/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/Azhar/ode-0.14/ode/src/.libs",
+					"/Users/Azhar/ode-0.14/drawstuff/src/.libs",
+				);
+				OTHER_LDFLAGS = (
+					"-lode",
+					"-ldrawstuff",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +294,7 @@
 				2E9C3DD11C18063D00F40219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
